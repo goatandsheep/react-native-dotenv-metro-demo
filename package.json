@@ -14,11 +14,21 @@
     "metro-core": "^0.66.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-native": "^0.64.2",
     "react-native-dotenv": "^3.0.0"
   },
   "scripts": {
     "build": "metro build",
     "build:test": "node build.js",
-    "server": "node server.js"
+    "server": "node server.js",
+    "run:android": "react-native run-android",
+    "start:development": "cross-env NODE_ENV=development npx react-native start --reset-cache",
+    "start:staging": "cross-env NODE_ENV=staging npx react-native start --reset-cache",
+    "start:production": "cross-env NODE_ENV=production npx react-native start --reset-cache"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@react-native-community/cli": "^5.0.1",
+    "cross-env": "^7.0.3"
   }
 }
