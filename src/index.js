@@ -1,9 +1,10 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
+import { TEST_VAL } from 'react-native-dotenv';
 
 function HelloWorld() {
     return (
-        <h1>Javascript works</h1>
+        <h1>Javascript works { TEST_VAL }.</h1>
     );
 }
 
