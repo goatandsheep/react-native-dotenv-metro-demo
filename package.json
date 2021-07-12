@@ -9,5 +9,9 @@
   "dependencies": {
     "metro": "^0.66.1",
     "metro-core": "^0.66.1"
+  },
+  "scripts": {
+    "build": "metro build",
+    "build:test": "node build.js"
   }
 }
